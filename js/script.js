@@ -18,3 +18,7 @@ console.log(cognomi);
 cognomi.push(prompt("Inserisci il nuovo cognome da aggiungere alla lista"));
 cognomi.sort();
 console.log(cognomi);
+
+for (i= 0; i < cognomi.length; i++){
+    console.log(cognomi[i]);
+}
