@@ -20,9 +20,14 @@ cognomi.push(prompt("Inserisci il nuovo cognome da aggiungere alla lista"));
 cognomi.sort();
 
 // Conteggio numerazione
-var numerazione = 0;
+var numerazione = 1;
 for (i= 0; i < cognomi.length; i++){
     numerazione ++;
     console.log(numerazione + " " + cognomi [i]);
 }
 
+var element = document.getElementById("lista");
+
+for(var i=0; i<cognomi.length; i++) {
+    element.innerHTML += '<li>' +  cognomi[i] + '</li>';
+  }
