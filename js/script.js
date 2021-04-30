@@ -12,7 +12,9 @@ var cognomi = [
     "gallina",
     "merola"];
 
+    cognomi.sort();
 console.log(cognomi);
 
 cognomi.push(prompt("Inserisci il nuovo cognome da aggiungere alla lista"));
+cognomi.sort();
 console.log(cognomi);
